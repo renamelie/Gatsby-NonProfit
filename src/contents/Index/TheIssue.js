@@ -29,10 +29,8 @@ const TheIssue = ({ className }) => {
 				style={{ minHeight: '600px', height: '600px' }}
 			/>
 			<Wrapper className="wrapper">
-				<div className="content">
-					<LogoStop className="logoStop" color="white" />
-					<BlockText />
-				</div>
+				<LogoStop className="logoStop" color="white" />
+				<BlockText />
 			</Wrapper>
 		</div>
 	)
@@ -50,18 +48,12 @@ export default styled(TheIssue)`
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		/* height: 90%; */
 		height: 100%;
 		min-height: 310px;
 	}
 
-	.content {
-		display: flex;
-		flex-direction: column;
-		height: 90%;
-		width: 100%;
-	}
-
-	.content > * {
+	.wrapper > * {
 		flex: 1;
 	}
 
@@ -71,8 +63,15 @@ export default styled(TheIssue)`
 		align-items: center;
 	}
 
+	${media.medium`
+    .logoStop {
+      font-size: 50px;
+      line-height: 56px;
+    }
+  `};
+
 	${media.bigMedium`
-    .content {
+    .wrapper {
       flex-direction: row;
     }
 
