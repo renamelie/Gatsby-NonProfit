@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components"
-import { pxToRem, colors } from "./helpers"
-import "../../content/assets/fonts/style.css"
+import { createGlobalStyle } from 'styled-components'
+import { pxToRem, colors } from './helpers'
+import '../../content/assets/fonts/style.css'
 
 const Global = createGlobalStyle`
 	*,
@@ -9,7 +9,7 @@ const Global = createGlobalStyle`
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-		transition: all 0.5s;
+		/* transition: all 0.5s; */
 	}
 
 	:root {

@@ -39,7 +39,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	}
 
 	const posts = result.data.allMarkdownRemark.nodes
-	console.log(result)
 
 	const blogEdges = posts.filter(node => node.frontmatter.posttype === `blog`)
 	const storieEdges = posts.filter(
