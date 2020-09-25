@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../../utils/helpers'
 import ButtonAbsolute from '../../components/ButtonAbsolute'
+import { Link } from 'gatsby'
 
 const BlockText = ({ className }) => {
 	return (
@@ -12,7 +13,12 @@ const BlockText = ({ className }) => {
 					Climate change poses the biggest threat to women in developing
 					nations.
 				</p>
-				<p>Read more about this environmental and social cause</p>
+
+				<p>
+					<Link to="/">
+						Read more about this environmental and social cause
+					</Link>
+				</p>
 			</div>
 		</div>
 	)

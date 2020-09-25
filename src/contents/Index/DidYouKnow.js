@@ -34,16 +34,33 @@ const DidYouKnow = ({ className }) => {
 					<ButtonLink to="/">Take action</ButtonLink>
 				</div>
 				<div className="knows">
-					<BlockIcons title="3 out of 4" twitter="/" facebook="/" abs={true}>
+					<BlockIcons
+						title="3 out of 4"
+						twitter="https://www.google.com/"
+						facebook="https://www.google.com/"
+						abs={true}
+					>
 						People living in poverty depend on agriculture for survival.
 					</BlockIcons>
-					<BlockIcons title="100 millions +" twitter="/" facebook="/">
+					<BlockIcons
+						title="100 millions +"
+						twitter="https://www.google.com/"
+						facebook="https://www.google.com/"
+					>
 						People living in poverty due to climate change by 2030
 					</BlockIcons>
-					<BlockIcons title="30%" twitter="/" facebook="/">
+					<BlockIcons
+						title="30%"
+						twitter="https://www.google.com/"
+						facebook="https://www.google.com/"
+					>
 						How high crop yield losses could go by the year 2080
 					</BlockIcons>
-					<BlockIcons title="200 millions +" twitter="/" facebook="/">
+					<BlockIcons
+						title="200 millions +"
+						twitter="https://www.google.com/"
+						facebook="https://www.google.com/"
+					>
 						Refugees dealing with food shortages by the year 2050
 					</BlockIcons>
 				</div>
@@ -56,7 +73,7 @@ export default styled(DidYouKnow)`
 	position: relative;
 	background-color: ${colors.accent};
 	min-height: 500px;
-	z-index: -2;
+	z-index: 0;
 
 	.wrapper {
 		display: flex;

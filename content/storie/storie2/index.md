@@ -1,8 +1,9 @@
 ---
-title: Hello World
-date: '2015-05-01T22:12:03.284Z'
-description: 'Hello World'
-posttype: 'blog'
+title: Storie 2
+description: 'I am a person who was helped by this organization. Before they gave me assistance, I was really struggling with this issue, but now my life is better.'
+posttype: 'stories'
+poste: 'BALKI, FARMER AND MOTHER IN NIGER'
+image: './Storie2.jpg'
 ---
 
 This is my first post on my new fake blog! How exciting!
@@ -20,4 +21,4 @@ Oh, and here's a great quote from this Wikipedia on
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
 
-![Chinese Salty Egg](./salty_egg.jpg)
+![Chinese Salty Egg](./Storie2.jpg)

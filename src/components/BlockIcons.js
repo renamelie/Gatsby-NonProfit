@@ -54,6 +54,7 @@ export default styled(BlockIcons)`
 		border-radius: 50%;
 		height: 32px;
 		width: 32px;
+		/* cursor: pointer; */
 	}
 
 	.icons svg {

@@ -22,7 +22,7 @@ export default styled(Paragraphe)`
 		line-height: 20px;
 	}
 
-	${media.medium`
+	${media.smaller`
     grid-gap: 4rem;
 
     & h2 {

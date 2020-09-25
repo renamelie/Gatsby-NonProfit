@@ -41,7 +41,7 @@ export default styled(TheIssue)`
 	min-height: 600px;
 	position: relative;
 	background-color: ${colors.accent};
-	z-index: -2;
+	z-index: 0;
 
 	.wrapper {
 		display: flex;

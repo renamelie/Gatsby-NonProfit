@@ -17,10 +17,15 @@ const BGImg = styled(Image)`
 	width: 248px;
 	height: 176px;
 
-	${media.medium`
+	${media.smaller`
     width: 320px;
     height: 224px;
  `}
+
+	@media (min-width: 768px) and (max-width: 1200px) {
+		top: 22%;
+		left: -70px;
+	}
 `
 
 const BlockImg = ({ className, title, image, children }) => {
@@ -86,23 +91,43 @@ export default styled(BlockImg)`
 		z-index: -1;
 	}
 
-	.content {
-		margin-top: 176px;
-	}
-
 	& .content {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 2rem;
+		margin-top: 176px;
 	}
 
-	${media.medium`
-    .content {
-      margin-top: 224px;
+	${media.smaller`
+  	&	.content {
+			margin-top: 224px;
+			text-align: left;
     }
-  `}
+	`}
+
+	@media (min-width: 768px) and (max-width: 1200px) {
+		min-height: 400px;
+		max-width: 80%;
+
+		& .content {
+			margin-top: 0;
+			margin-left: 50%;
+		}
+
+		.BGColor {
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			right: 0;
+			left: 60px;
+		}
+
+		& .content {
+			/* border: 2px solid purple; */
+		}
+	}
 
 	${media.large`
     min-height: 550px;
