@@ -44,6 +44,7 @@ export default styled(Header)`
 		display: flex;
 		flex-direction: column;
 		font-size: 12px;
+		font-weight: 500;
 	}
 
 	.donate {
