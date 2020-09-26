@@ -8,7 +8,7 @@ import Paragraphe from './Paragraphe'
 import ButtonLink from './ButtonLink'
 
 const BGImg = styled(Image)`
-	position: absolute;
+	position: absolute !important;
 	top: 0;
 	width: 100%;
 	z-index: 2;
