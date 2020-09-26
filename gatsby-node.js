@@ -51,11 +51,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 	if (posts.length > 0) {
 		storieEdges.forEach((post, index) => {
+			const previous =
+				index === storieEdges.length - 1 ? null : storieEdges[index + 1]
+			const next = index === 0 ? null : storieEdges[index - 1]
+
 			createPage({
 				path: post.fields.slug,
 				component: storiePost,
 				context: {
 					slug: post.fields.slug,
+					previous,
+					next,
 				},
 			})
 		})

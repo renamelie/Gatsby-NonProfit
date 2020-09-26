@@ -8,7 +8,7 @@ import Paragraphe from './Paragraphe'
 import ButtonLink from './ButtonLink'
 
 const BGImg = styled(Image)`
-	position: absolute !important;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	z-index: 2;
@@ -42,7 +42,7 @@ const BlockImg = ({ className, title, image, children }) => {
 						id
 						name
 						childImageSharp {
-							fluid(maxWidth: 1920, quality: 100) {
+							fluid(maxWidth: 320, quality: 100) {
 								...GatsbyImageSharpFluid_withWebp
 							}
 						}

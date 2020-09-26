@@ -14,7 +14,7 @@ const Paragraphe = ({ className, children, title }) => {
 export default styled(Paragraphe)`
 	& h2 {
 		font-size: 18px;
-		margin-bottom: 1rem !important;
+		margin-bottom: 1rem;
 	}
 
 	& p {

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Image from 'gatsby-image'
 
 const BGImg = styled(Image)`
-	position: absolute !important;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
