@@ -30,7 +30,7 @@ const DidYouKnow = ({ className }) => {
 			/>
 			<Wrapper className="wrapper">
 				<div className="title">
-					<h1>Climate change is a hunger issue.</h1>
+					<h1 className="flood">Climate change is a hunger issue.</h1>
 					<ButtonLink to="/">Take action</ButtonLink>
 				</div>
 				<div className="knows">
@@ -84,7 +84,7 @@ export default styled(DidYouKnow)`
 
 	.wrapper h1 {
 		color: ${colors.white};
-		font-family: 'FloodStd', sans-serif;
+		/* font-family: 'FloodStd', sans-serif; */
 		font-size: 44px;
 		line-height: 46px;
 		margin-bottom: 1rem;

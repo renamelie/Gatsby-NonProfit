@@ -41,6 +41,10 @@ const Global = createGlobalStyle`
 	h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 	}
+
+	.flood {
+		font-family: 'FloodStd', sans-serif;
+	}
 `
 
 export default Global
