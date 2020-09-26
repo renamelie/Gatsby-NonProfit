@@ -84,23 +84,24 @@ export default styled(DidYouKnow)`
 
 	.wrapper h1 {
 		color: ${colors.white};
-		/* font-family: 'FloodStd', sans-serif; */
 		font-size: 44px;
 		line-height: 46px;
 		margin-bottom: 1rem;
 	}
 
-	.title {
+	.wrapper .title {
 		flex: 1;
-		min-height: 170px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		min-height: 260px;
 	}
 
 	.knows {
-		flex: 2;
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
 	}
 
 	.knows > div:first-child {

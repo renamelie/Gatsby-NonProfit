@@ -46,7 +46,6 @@ export default styled(WhatWeDo)`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 3rem;
 	}
 
 	& h1 {

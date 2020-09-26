@@ -30,6 +30,7 @@ export default styled(BlockIcons)`
 	background-color: ${colors.white};
 	height: 160px;
 	width: 310px;
+	margin: 1rem 0;
 
 	.content {
 		display: flex;

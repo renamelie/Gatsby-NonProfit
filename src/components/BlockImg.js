@@ -77,9 +77,10 @@ export default styled(BlockImg)`
 	justify-content: center;
 	padding: 2rem;
 	z-index: 1;
-	min-height: 550px;
+	min-height: 500px;
 	max-width: 500px;
 	text-align: center;
+	margin: 1rem 0;
 
 	.BGColor {
 		position: absolute;
@@ -92,12 +93,16 @@ export default styled(BlockImg)`
 	}
 
 	& .content {
+		/* border: 2px solid pink; */
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
-		gap: 2rem;
 		margin-top: 176px;
+	}
+
+	& .content > *:first-child {
+		margin-bottom: 1rem;
 	}
 
 	${media.smaller`
@@ -121,11 +126,7 @@ export default styled(BlockImg)`
 			height: 100%;
 			bottom: 0;
 			right: 0;
-			left: 60px;
-		}
-
-		& .content {
-			/* border: 2px solid purple; */
+			left: 50px;
 		}
 	}
 
