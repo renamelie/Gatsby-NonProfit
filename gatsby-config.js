@@ -101,7 +101,7 @@ module.exports = {
 			options: {
 				custom: {
 					families: ['FloodStd'],
-					urls: ['/content/assets/fonts/style.css'],
+					urls: ['/fonts/fonts.css'],
 				},
 			},
 		},
