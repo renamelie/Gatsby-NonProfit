@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { pxToRem, colors } from './helpers'
-import '../../content/assets/fonts/style.css'
+// import '../../content/assets/fonts/style.css'
 
 const Global = createGlobalStyle`
 	*,
