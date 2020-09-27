@@ -29,7 +29,7 @@ const Stories = ({ className }) => {
 							name
 							image {
 								childImageSharp {
-									fluid(maxWidth: 640, quality: 100) {
+									fluid(maxWidth: 640, quality: 80) {
 										...GatsbyImageSharpFluid_withWebp
 									}
 								}

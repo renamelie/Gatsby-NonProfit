@@ -42,7 +42,7 @@ const BlockImg = ({ className, title, image, children }) => {
 						id
 						name
 						childImageSharp {
-							fluid(maxWidth: 320, quality: 100) {
+							fluid(maxWidth: 320, quality: 80) {
 								...GatsbyImageSharpFluid_withWebp
 							}
 						}

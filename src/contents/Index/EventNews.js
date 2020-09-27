@@ -38,7 +38,7 @@ const Article = ({ children, button, image, title }) => {
 						id
 						name
 						childImageSharp {
-							fluid(maxWidth: 576, quality: 100) {
+							fluid(maxWidth: 576, quality: 80) {
 								...GatsbyImageSharpFluid_withWebp
 							}
 						}
