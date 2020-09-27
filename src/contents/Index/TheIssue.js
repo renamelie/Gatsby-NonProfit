@@ -14,7 +14,7 @@ const TheIssue = ({ className }) => {
 			banner: file(absolutePath: { regex: "/Banner.jpg/" }) {
 				childImageSharp {
 					fluid(maxWidth: 1920, quality: 100) {
-						...GatsbyImageSharpFluid_withWebp
+						...GatsbyImageSharpFluid
 					}
 				}
 			}

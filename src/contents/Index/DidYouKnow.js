@@ -14,7 +14,7 @@ const DidYouKnow = ({ className }) => {
 			photo: file(absolutePath: { regex: "/WP1.jpg/" }) {
 				childImageSharp {
 					fluid(maxWidth: 1920, quality: 100) {
-						...GatsbyImageSharpFluid_withWebp
+						...GatsbyImageSharpFluid
 					}
 				}
 			}
