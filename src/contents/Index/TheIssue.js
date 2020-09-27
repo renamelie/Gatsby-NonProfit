@@ -13,7 +13,7 @@ const TheIssue = ({ className }) => {
 		query TheIssue {
 			banner: file(absolutePath: { regex: "/Banner.jpg/" }) {
 				childImageSharp {
-					fluid(maxWidth: 1920, quality: 100) {
+					fluid(maxWidth: 1920, quality: 80) {
 						...GatsbyImageSharpFluid_withWebp
 					}
 				}
