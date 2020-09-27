@@ -43,6 +43,9 @@ const Global = createGlobalStyle`
 
 	.flood {
 		font-family: 'FloodStd', sans-serif;
+		color: ${colors.white};
+		font-size: 44px;
+		line-height: 46px;
 	}
 `
 

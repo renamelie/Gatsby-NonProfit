@@ -46,6 +46,7 @@ export default styled(WhatWeDo)`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: space-between;
 	}
 
 	& h1 {
@@ -57,7 +58,7 @@ export default styled(WhatWeDo)`
 	}
 
 	${media.medium`
-    text-align: left;
+		text-align: left;
 
     & h1 {
       font-size: 36px;

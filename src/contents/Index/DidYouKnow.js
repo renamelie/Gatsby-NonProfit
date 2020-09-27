@@ -83,9 +83,6 @@ export default styled(DidYouKnow)`
 	}
 
 	.wrapper h1 {
-		color: ${colors.white};
-		font-size: 44px;
-		line-height: 46px;
 		margin-bottom: 1rem;
 	}
 

@@ -86,7 +86,6 @@ const Text = styled.div`
 `
 
 const Storie = ({ className, node }) => {
-	console.log(node.fields.slug)
 	return (
 		<div className={className}>
 			<div className="contentImg">
@@ -116,6 +115,7 @@ export default styled(Storie)`
 	padding: 1rem 0;
 	height: 660px;
 	max-width: 950px;
+	min-height: 760px;
 
 	.contentImg {
 		flex: 1;

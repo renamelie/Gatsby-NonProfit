@@ -4,7 +4,7 @@ import { colors } from '../utils/helpers'
 
 import Button from './Button'
 
-const ButtonAbsolute = ({ className, children }) => {
+const ButtonAbsWhite = ({ className, children }) => {
 	return (
 		<div className={className}>
 			<Button>{children}</Button>
@@ -12,7 +12,7 @@ const ButtonAbsolute = ({ className, children }) => {
 	)
 }
 
-export default styled(ButtonAbsolute)`
+export default styled(ButtonAbsWhite)`
 	position: absolute;
 	width: 100%;
 	display: flex;
@@ -21,7 +21,7 @@ export default styled(ButtonAbsolute)`
 	z-index: 2;
 
 	& > * {
-		color: ${colors.white};
-		background-color: ${colors.primary};
+		color: ${colors.primary};
+		background-color: ${colors.white};
 	}
 `

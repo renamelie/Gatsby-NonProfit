@@ -27,7 +27,6 @@ export default styled(Paragraphe)`
 
     & h2 {
       font-size: 22px;
-      margin-bottom: 5px;
     }
 
     & p {
@@ -39,7 +38,6 @@ export default styled(Paragraphe)`
 	${media.large`
     & h2 {
       font-size: 26px;
-      margin-bottom: 5px;
     }
 
     & p {

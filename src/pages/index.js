@@ -9,6 +9,8 @@ import TakeAction from '../contents/Index/TakeAction'
 import WhatWeDo from '../contents/Index/WhatWeDo'
 import DidYouKnow from '../contents/Index/DidYouKnow'
 import Stories from '../contents/Index/Stories'
+import EventNews from '../contents/Index/EventNews'
+import Subscribe from '../contents/Index/Subscribe'
 
 const BlogIndex = ({ data, location, className }) => {
 	const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -22,6 +24,8 @@ const BlogIndex = ({ data, location, className }) => {
 				<WhatWeDo />
 				<DidYouKnow />
 				<Stories />
+				<EventNews />
+				<Subscribe />
 			</div>
 		</Layout>
 	)

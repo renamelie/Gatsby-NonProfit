@@ -22,7 +22,7 @@ const BGImg = styled(Image)`
     height: 224px;
  `}
 
-	@media (min-width: 768px) and (max-width: 1200px) {
+	@media (min-width: 768px) and (max-width: 1199px) {
 		top: 22%;
 		left: -70px;
 	}
@@ -80,7 +80,7 @@ export default styled(BlockImg)`
 	min-height: 500px;
 	max-width: 500px;
 	text-align: center;
-	margin: 1rem 0;
+	margin: 1rem;
 
 	.BGColor {
 		position: absolute;
@@ -103,16 +103,24 @@ export default styled(BlockImg)`
 
 	& .content > *:first-child {
 		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	& .content > div {
+		text-align: center;
 	}
 
 	${media.smaller`
   	&	.content {
 			margin-top: 224px;
+		}
+
+		& .content > *:first-child {
 			text-align: left;
-    }
+		}
 	`}
 
-	@media (min-width: 768px) and (max-width: 1200px) {
+	@media (min-width: 768px) and (max-width: 1199px) {
 		min-height: 400px;
 		max-width: 80%;
 
@@ -131,6 +139,7 @@ export default styled(BlockImg)`
 	}
 
 	${media.large`
-    min-height: 550px;
+		min-height: 550px;
+
   `}
 `
