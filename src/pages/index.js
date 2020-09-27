@@ -27,7 +27,10 @@ const BlogIndex = ({ data, location, className }) => {
 	)
 }
 
-export default styled(BlogIndex)``
+export default styled(BlogIndex)`
+	display: flex;
+	flex-direction: column;
+`
 
 export const pageQuery = graphql`
 	query {

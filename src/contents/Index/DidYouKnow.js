@@ -94,7 +94,7 @@ export default styled(DidYouKnow)`
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		min-height: 260px;
+		min-height: 270px;
 	}
 
 	.knows {

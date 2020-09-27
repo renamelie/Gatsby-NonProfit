@@ -1,8 +1,10 @@
 ---
-title: Storie 2
-description: 'I am a person who was helped by this organization. Before they gave me assistance, I was really struggling with this issue, but now my life is better.'
+title: Alika
+name: 'storie2'
+date: '2019-01-01T22:12:03.284Z'
+description: 'BAMS I am a person who was helped by this organization. Before they gave me assistance, I was really struggling with this issue, but now my life is better.'
 posttype: 'stories'
-poste: 'BALKI, FARMER AND MOTHER IN NIGER'
+poste: 'ALIKA, FARMER AND MOTHER IN NIGER'
 image: './Storie2.jpg'
 ---
 

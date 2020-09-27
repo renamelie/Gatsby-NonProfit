@@ -34,7 +34,7 @@ const Global = createGlobalStyle`
   a {
     text-decoration: none;
 		box-shadow: none;
-    color: black;
+		color: ${colors.primary};
   }
 
 	h1, h2, h3, h4, h5, h6, p {

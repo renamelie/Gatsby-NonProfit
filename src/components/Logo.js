@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { media } from '../utils/helpers'
+import { Link } from 'gatsby'
 
 const Logo = ({ title, className }) => {
 	return (
 		<div className={className}>
-			<span>{title}</span>
+			<Link to="/">{title}</Link>
 		</div>
 	)
 }
@@ -17,14 +18,14 @@ export default styled(Logo)`
 	line-height: 1.5rem;
 	font-weight: 500;
 
-	& span {
+	& a {
 		width: 130px;
 	}
 
 	${media.medium`
     font-size: 22px;
 
-    & span {
+    & a {
       width: 160px;
     }
   `};

@@ -16,4 +16,5 @@ export default styled(ButtonAbsolute)`
 	display: flex;
 	justify-content: center;
 	top: -20px;
+	z-index: 2;
 `

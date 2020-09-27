@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Logo from '../components/Logo'
 import { colors, media } from '../utils/helpers'
 import ButtonLink from '../components/ButtonLink'
+import { Link } from 'gatsby'
 
 const Header = ({ title, className }) => {
 	return (
@@ -10,9 +11,15 @@ const Header = ({ title, className }) => {
 			<div className="header">
 				<Logo title={title} />
 				<div className="menu">
-					<span>About us</span>
-					<span>Our stories</span>
-					<span>News and events</span>
+					<Link to="/about">
+						<span>About us</span>
+					</Link>
+					<Link to="/storie1">
+						<span>Our stories</span>
+					</Link>
+					<Link to="/news">
+						<span>News and events</span>
+					</Link>
 				</div>
 			</div>
 			<div className="donate">
