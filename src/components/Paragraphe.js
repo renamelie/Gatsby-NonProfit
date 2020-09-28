@@ -13,8 +13,8 @@ const Paragraphe = ({ className, children, title }) => {
 
 export default styled(Paragraphe)`
 	& h2 {
-		font-size: 18px;
-		margin-bottom: 1rem;
+		font-size: 14px;
+		margin-bottom: 0.5rem;
 	}
 
 	& p {
@@ -23,10 +23,9 @@ export default styled(Paragraphe)`
 	}
 
 	${media.smaller`
-    grid-gap: 4rem;
-
     & h2 {
       font-size: 22px;
+      margin-bottom: 1rem;
     }
 
     & p {

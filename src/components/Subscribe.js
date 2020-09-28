@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors, media } from '../../utils/helpers'
+import { colors, media } from '../utils/helpers'
 
-import Wrapper from '../../components/Wrapper'
+import Wrapper from './Wrapper'
 
-const MailchimpForm = ({ className }) => {
+const MailchimpForm = () => {
 	return (
 		<div className="mail">
 			<form
@@ -12,17 +12,13 @@ const MailchimpForm = ({ className }) => {
 				method="POST"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
-				action="/success"
+				// action="/success"
 			>
 				<input type="hidden" name="form-name" value="mailchimp" />
 				<input type="hidden" name="bot-field" />
 
 				<label>
-					<input
-						type="email"
-						name="email"
-						placeholder="Enter your email address"
-					/>
+					<input type="email" name="email" placeholder="Enter your email" />
 				</label>
 
 				<button type="submit">SEND</button>
@@ -34,7 +30,7 @@ const MailchimpForm = ({ className }) => {
 const Subscribe = ({ className }) => {
 	return (
 		<div className={className}>
-			<Wrapper style={{ padding: '3rem 0 1rem' }}>
+			<Wrapper>
 				<p>
 					Subscribe to our monthly newsletter and stay up to date with all news
 					and events.
@@ -46,7 +42,6 @@ const Subscribe = ({ className }) => {
 }
 
 export default styled(Subscribe)`
-	border: 2px solid pink;
 	background-color: ${colors.accent};
 
 	& > *:first-child {
@@ -66,7 +61,6 @@ export default styled(Subscribe)`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 1rem 0;
 	}
 
 	& form {
@@ -87,7 +81,6 @@ export default styled(Subscribe)`
 	& input {
 		color: ${colors.primary};
 		border: 2px solid #ededed;
-		/* min-width: 350px; */
 	}
 
 	& button {
@@ -99,7 +92,7 @@ export default styled(Subscribe)`
 	& form {
 		display: flex;
 		justify-content: center;
-		margin: 20px;
+		margin: 20px 0;
 		flex-flow: row wrap;
 	}
 

@@ -51,8 +51,8 @@ export default styled(WhatWeDo)`
 
 	& h1 {
 		color: ${colors.white};
-		font-size: 22px;
-		line-height: 28px;
+		font-size: 20px;
+		line-height: 26px;
 		font-weight: 600;
 		margin: 2rem 0;
 	}

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import Header from '../contents/Header'
 import Footer from '../contents/Footer'
+import Subscribe from '../components/Subscribe'
 import './layout.css'
 
 const Container = styled.div`
@@ -15,6 +16,7 @@ const Layout = ({ location, title, children }) => {
 		<Container>
 			<Header title={title} />
 			<main>{children}</main>
+			<Subscribe />
 			<Footer title={title} />
 		</Container>
 	)

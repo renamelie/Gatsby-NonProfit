@@ -70,7 +70,7 @@ const Article = ({ children, button, image, title }) => {
 const EventNews = ({ className }) => {
 	return (
 		<div className={className}>
-			<Wrapper style={{ padding: '3rem 0 1rem' }}>
+			<Wrapper className="wrapper">
 				<h1 className="title flood">
 					Let's take action now to save the future.
 				</h1>
@@ -105,6 +105,13 @@ export default styled(EventNews)`
 	background-color: ${colors.primary};
 	color: ${colors.white};
 	text-align: center;
+	display: flex;
+	justify-content: center;
+
+	& .wrapper {
+		padding: 3rem 0 1rem;
+		max-width: 1400px;
+	}
 
 	& .title {
 		margin-bottom: 1rem;

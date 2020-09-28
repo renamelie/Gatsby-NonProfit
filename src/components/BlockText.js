@@ -1,24 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import { media } from '../../utils/helpers'
-import ButtonAbsolute from '../../components/ButtonAbsolute'
+import { media } from '../utils/helpers'
+import ButtonAbsolute from './ButtonAbsolute'
 import { Link } from 'gatsby'
 
-const BlockText = ({ className }) => {
+const BlockText = ({ className, children, to }) => {
 	return (
 		<div className={className}>
 			<ButtonAbsolute>THE ISSUE</ButtonAbsolute>
 			<div className="container">
-				<p>
-					Climate change poses the biggest threat to women in developing
-					nations.
-				</p>
-
-				<p>
-					<Link to="/">
-						Read more about this environmental and social cause
-					</Link>
-				</p>
+				<p>{children}</p>
+				{to && (
+					<p className="more">
+						<Link to="/">
+							Read more about this environmental and social cause
+						</Link>
+					</p>
+				)}
 			</div>
 		</div>
 	)
@@ -45,7 +43,7 @@ export default styled(BlockText)`
 		font-weight: 600;
 	}
 
-	& .container p:last-child {
+	& .container .more {
 		font-size: 11px;
 	}
 
@@ -62,7 +60,7 @@ export default styled(BlockText)`
       line-height: 46px;
     }
 
-    & .container p:last-child {
+    & .container .more {
       font-size: 16px;
     }
   `}

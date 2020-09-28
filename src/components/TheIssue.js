@@ -1,36 +1,51 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { colors, media } from '../../utils/helpers'
+import { colors, media } from '../utils/helpers'
 
-import LogoStop from '../../components/LogoStop'
-import BGImg from '../../components/BGImg'
-import Wrapper from '../../components/Wrapper'
-import BlockText from './BlockText'
+import LogoStop from './LogoStop'
+import BGImg from './BGImg'
+import Wrapper from './Wrapper'
 
-const TheIssue = ({ className }) => {
+const TheIssue = ({ className, image, children }) => {
 	const data = useStaticQuery(graphql`
 		query TheIssue {
-			banner: file(absolutePath: { regex: "/Banner.jpg/" }) {
-				childImageSharp {
-					fluid(maxWidth: 1920, quality: 80) {
-						...GatsbyImageSharpFluid_withWebp
+			allFile(
+				filter: {
+					extension: { regex: "/(jpg)|(jpeg)|(png)/" }
+					relativeDirectory: { eq: "images" }
+				}
+			) {
+				edges {
+					node {
+						id
+						name
+						childImageSharp {
+							fluid(maxWidth: 1920, quality: 80) {
+								...GatsbyImageSharpFluid_withWebp
+							}
+						}
 					}
 				}
 			}
 		}
 	`)
 
+	const match = useMemo(
+		() => data.allFile.edges.find(({ node }) => image === node.name),
+		[data, image]
+	)
+
 	return (
 		<div className={className}>
 			<BGImg
-				fluid={data.banner.childImageSharp.fluid}
+				fluid={match.node.childImageSharp.fluid}
 				alt="Stop Climate Change"
 				style={{ minHeight: '600px', height: '600px' }}
 			/>
 			<Wrapper className="wrapper">
 				<LogoStop className="logoStop" color="white" />
-				<BlockText />
+				{children}
 			</Wrapper>
 		</div>
 	)
