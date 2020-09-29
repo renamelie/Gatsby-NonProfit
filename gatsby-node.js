@@ -135,6 +135,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 			posttype: String
 			poste: String
 			name: String
+			country: String
     }
 
     type Fields {

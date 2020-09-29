@@ -1,10 +1,10 @@
 ---
 title: Alika
-name: 'storie2'
 date: '2019-01-01T22:12:03.284Z'
 description: 'BAMS I am a person who was helped by this organization. Before they gave me assistance, I was really struggling with this issue, but now my life is better.'
 posttype: 'stories'
 poste: 'ALIKA, FARMER AND MOTHER IN NIGER'
+country: 'Rwanda'
 image: './Storie2.jpg'
 ---
 

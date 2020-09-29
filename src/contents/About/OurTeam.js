@@ -108,7 +108,7 @@ export default styled(OurTeam)`
 
 	& .person {
 		position: relative;
-		min-height: 300px;
+		min-height: 320px;
 	}
 
 	& .person .details {
@@ -121,7 +121,7 @@ export default styled(OurTeam)`
 		font-size: 14px;
 		line-height: 20px;
 		padding: 0.5rem;
-		height: 55px;
+		height: 70px;
 		width: 100%;
 	}
 
@@ -146,7 +146,6 @@ export default styled(OurTeam)`
 		}
 
 		& .person .details {
-			justify-content: flex-start;
 			width: calc(100% - 2rem);
 			margin: 0 0 2rem 2rem;
 			bottom: -1rem;

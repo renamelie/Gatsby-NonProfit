@@ -1,10 +1,10 @@
 ---
 title: Nada
-name: 'storie3'
 date: '2018-08-01T22:12:03.284Z'
 description: 'CAMS I am a person who was helped by this organization. Before they gave me assistance, I was really struggling with this issue, but now my life is better.'
 posttype: 'stories'
 poste: 'NADA, FARMER AND MOTHER IN NIGER'
+country: 'Sudan'
 image: './Storie3.jpg'
 ---
 

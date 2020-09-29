@@ -43,6 +43,7 @@ const Subscribe = ({ className }) => {
 
 export default styled(Subscribe)`
 	background-color: ${colors.accent};
+	z-index: 0;
 
 	& > *:first-child {
 		display: flex;
