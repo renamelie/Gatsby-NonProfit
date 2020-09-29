@@ -14,8 +14,6 @@ const StoriePostTemplate = ({ data, pageContext, location, className }) => {
 	const siteTitle = data.site.siteMetadata.title
 	const { previous, next } = pageContext
 
-	console.log(list)
-
 	return (
 		<Layout location={location} title={siteTitle}>
 			<SEO
@@ -50,7 +48,15 @@ const StoriePostTemplate = ({ data, pageContext, location, className }) => {
 						</div>
 						{/* <p>{post.frontmatter.title}</p> */}
 					</header>
-					{/* <section dangerouslySetInnerHTML={{ __html: post.html }} /> */}
+					<section>
+						<h2>
+							{post.frontmatter.title}, {post.frontmatter.country}
+						</h2>
+						<div
+							className="content"
+							dangerouslySetInnerHTML={{ __html: post.html }}
+						/>
+					</section>
 					<hr />
 					<nav className="blog-post-nav">
 						<ul
@@ -134,10 +140,23 @@ export default styled(StoriePostTemplate)`
 		color: ${colors.white};
 	}
 
+	& section {
+		padding: 2rem 0;
+	}
+
+	/* & section > * {
+
+	} */
+
+	& .content p {
+		padding: 1rem 0;
+	}
+
 	& blockquote {
 		background-color: ${colors.white};
 		color: ${colors.primary};
 		margin: 0;
+		padding: 1rem;
 	}
 
 	${media.medium`
@@ -153,9 +172,6 @@ export default styled(StoriePostTemplate)`
 			font-size: 44px;
 			line-height: 46px;
 		}
-	`}
-
-	${media.large`
 	`}
 `
 

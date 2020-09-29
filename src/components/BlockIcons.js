@@ -32,7 +32,7 @@ export default styled(BlockIcons)`
 	width: 310px;
 	margin: 1rem 0;
 
-	.content {
+	& .content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -41,13 +41,13 @@ export default styled(BlockIcons)`
 		padding: 1rem;
 	}
 
-	.icons {
+	& .icons {
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
 	}
 
-	.icons a {
+	& .icons a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -58,7 +58,7 @@ export default styled(BlockIcons)`
 		/* cursor: pointer; */
 	}
 
-	.icons svg {
+	& .icons svg {
 		font-size: 13px;
 		margin: 5px;
 	}

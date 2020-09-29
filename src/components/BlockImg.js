@@ -57,8 +57,6 @@ const BlockImg = ({ className, title, image, children }) => {
 		[data, image]
 	)
 
-	// console.log(match)
-
 	return (
 		<div className={className}>
 			<div className="BGColor"></div>
@@ -93,7 +91,6 @@ export default styled(BlockImg)`
 	}
 
 	& .content {
-		/* border: 2px solid pink; */
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;

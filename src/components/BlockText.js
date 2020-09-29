@@ -45,6 +45,7 @@ export default styled(BlockText)`
 
 	& .container .more {
 		font-size: 11px;
+		text-decoration: underline;
 	}
 
 	${media.smaller`

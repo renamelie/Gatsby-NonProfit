@@ -30,7 +30,6 @@ const Header = ({ title, className }) => {
 }
 
 export default styled(Header)`
-	/* border: 2px solid ${colors.accent}; */
 	position: relative;
 	width: calc(100vw - 2 * 8vw);
 	left: 8vw;

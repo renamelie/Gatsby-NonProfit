@@ -8,12 +8,7 @@ country: 'Sudan'
 image: './Storie3.jpg'
 ---
 
-This is my first post on my new fake blog! How exciting!
-
-I'm sure I'll write a lot more interesting things in the future.
-
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec aliquet nunc, id consectetur lorem. Donec pretium est sed ornare bibendum. In tincidunt lacus vitae ullamcorper euismod. Praesent laoreet dui mattis, consectetur elit at, tincidunt magna. Aenean feugiat arcu ante, id pharetra tortor accumsan ut.
 
 > A salted duck egg is a Chinese preserved food product made by soaking duck
 > eggs in brine, or packing each egg in damp, salted charcoal. In Asian
@@ -22,5 +17,3 @@ Oh, and here's a great quote from this Wikipedia on
 > wrapped in plastic, and vacuum packed. From the salt curing process, the
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
-
-![Chinese Salty Egg](./Storie3.jpg)
