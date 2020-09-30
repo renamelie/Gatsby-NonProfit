@@ -126,6 +126,10 @@ export default styled(Storie)`
 		margin-bottom: 2rem;
 	}
 
+	${media.smaller`
+		min-height: 690px;
+	`}
+
 	${media.medium`
 		height: 840px;
 

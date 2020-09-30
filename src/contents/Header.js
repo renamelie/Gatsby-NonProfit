@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from '../components/Logo'
-import { colors, media } from '../utils/helpers'
+import { media } from '../utils/helpers'
 import ButtonLink from '../components/ButtonLink'
 import { Link } from 'gatsby'
 
@@ -14,7 +14,7 @@ const Header = ({ title, className }) => {
 					<Link to="/about">
 						<span>About us</span>
 					</Link>
-					<Link to="/storie1">
+					<Link to="/storie1/">
 						<span>Our stories</span>
 					</Link>
 					<Link to="/news">
